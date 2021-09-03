@@ -1,0 +1,51 @@
+@import "vars";
+@import "fonts";
+@import "icons";
+@import "mixins";
+@import "blocks/header";
+@import "pages/main/index";
+@import "blocks/footer";
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $josefinsansfont;
+    font-weight: 400;
+    color: $white;
+
+    @include respond-to('tablet') {
+        
+        .lock {
+            overflow: hidden;
+        }
+    }
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    min-height: 100%;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+}

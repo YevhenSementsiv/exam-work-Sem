@@ -1,0 +1,122 @@
+.how {
+    background-color: $darkgrey;
+    width: 100%;
+    padding: 105px 0 110px;
+    text-align: center;
+    position: relative;
+
+    @include respond-to('laptop m') {
+        padding: 95px 0 100px;
+    }
+
+    @include respond-to('laptop') {
+        padding: 85px 0 90px;
+    }
+
+    @include respond-to('tablet') {
+        padding: 65px 0 70px;
+    }
+
+    @include respond-to('mobile') {
+        padding: 45px 0 50px;
+    }
+
+    &__elipse-holder {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        max-height: 350px;
+        position: absolute;
+        left: 0;
+        top: 15%;
+        z-index: 2;
+
+        @include respond-to('laptop') {
+            max-height: 350px;
+            top: 15%;
+        }
+    
+        @include respond-to('tablet') {
+            max-height: 350px;
+            top: 15%;
+        }
+    
+        @include respond-to('mobile') {
+            display: none;
+        }
+    }
+    
+    &__elipse-line {
+        max-width: 390px;
+        width: 100%;
+        height: 100%;
+        border: dotted 2px $grey; border-color: $grey transparent transparent transparent;   
+        border-radius: 50%;
+
+        @include respond-to('laptop') {
+            max-width: 310px;
+        }
+    
+        @include respond-to('tablet') {
+            max-width: 230px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        @include respond-to('mobile') {
+            flex-direction: column;
+        }
+    }
+
+    &__list-item {
+        font-family: $aleofont;
+        font-size: 36px;
+        line-height: 70%;
+
+        @include respond-to('laptop m') {
+            font-size: 34px;
+        }
+    
+        @include respond-to('laptop') {
+            font-size: 32px;
+        }
+    
+        @include respond-to('tablet') {
+            font-size: 28px;
+        }
+    
+        @include respond-to('mobile') {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__icon-holder {
+        font-size: 60px;
+        margin-bottom: 30px;
+
+        @include respond-to('laptop m') {
+            font-size: 58px;
+        }
+    
+        @include respond-to('laptop') {
+            font-size: 55px;
+            margin-bottom: 25px;
+        }
+    
+        @include respond-to('tablet') {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+    
+        @include respond-to('mobile') {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+    }
+}

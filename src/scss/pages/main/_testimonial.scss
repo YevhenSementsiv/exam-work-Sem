@@ -1,0 +1,189 @@
+.testimonial {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 115px 0;
+
+    @include respond-to('laptop m') {
+        padding: 105px 0;
+    }
+
+    @include respond-to('laptop') {
+        padding: 95px 0;
+    }
+
+    @include respond-to('tablet') {
+        padding: 75px 0;
+    }
+
+    @include respond-to('mobile') {
+        padding: 35px 0;
+        background-position: 30%;
+    }
+
+    &__title {
+        text-align: center;
+        font-family: $aleofont;
+        font-size: 36px;
+        font-weight: 400;
+        margin-bottom: 95px;
+
+        @include respond-to('laptop m') {
+            font-size: 34px;
+            margin-bottom: 85px;
+        }
+    
+        @include respond-to('laptop') {
+            font-size: 32px;
+            margin-bottom: 75px;
+        }
+    
+        @include respond-to('tablet') {
+            font-size: 30px;
+            margin-bottom: 55px;
+        }
+    
+        @include respond-to('mobile') {
+            font-size: 28px;
+            margin-bottom: 35px;
+        }
+    }
+
+    &__content {
+        background-color: $darkgrey;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 85px;
+
+        @include respond-to('laptop m') {
+            margin-bottom: 75px;
+        }
+    
+        @include respond-to('laptop') {
+            margin-bottom: 65px;
+        }
+    
+        @include respond-to('tablet') {
+            margin-bottom: 45px;
+        }
+    
+        @include respond-to('mobile') {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__img-holder {
+        width: 40%;
+        max-width: 445px;
+
+        @include respond-to('laptop m') {
+            width: 40%;
+        }
+    
+        @include respond-to('laptop') {
+            width: 50%;
+        }
+    
+        @include respond-to('tablet') {
+            width: 50%;
+        }
+    
+        @include respond-to('mobile') {
+            width: 100%;
+        }
+    }
+
+    &__response-holder {
+        width: 60%;
+        margin: 0;
+        padding: 50px;
+        font-size: 16px;
+        line-height: 160%;
+
+        @include respond-to('laptop m') {
+            padding: 45px;
+            font-size: 15px;
+            line-height: 150%;
+            width: 60%;
+        }
+    
+        @include respond-to('laptop') {
+            padding: 40px;
+            font-size: 15px;
+            line-height: 150%;
+            width: 50%;
+        }
+    
+        @include respond-to('tablet') {
+            padding: 25px;
+            font-size: 14px;
+            line-height: 130%;
+            width: 50%;
+        }
+    
+        @include respond-to('mobile') {
+            padding: 30px;
+            font-size: 12px;
+            line-height: 120%;
+            width: 100%;
+        }
+    }
+
+    &__name {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 30px;
+
+        @include respond-to('laptop m') {
+            font-size: 18px;
+        }
+    
+        @include respond-to('laptop') {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+    
+        @include respond-to('tablet') {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+    
+        @include respond-to('mobile') {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__icon-quote {
+        font-size: 20px;
+        color: $blue;
+        padding: 0 10px 0 0;
+        margin-top: -13px;
+        float: left;
+
+        @include respond-to('laptop m') {
+            font-size: 18px;
+            padding: 0 10px 0 0;
+            margin-top: -13px;
+        }
+    
+        @include respond-to('laptop') {
+            font-size: 16px;
+            padding: 0 8px 0 0;
+            margin-top: -12px;
+        }
+    
+        @include respond-to('tablet') {
+            font-size: 15px;
+            padding: 0 7px 0 0;
+            margin-top: -11px;
+        }
+    
+        @include respond-to('mobile') {
+            font-size: 14px;
+            padding: 0 6px 0 0;
+            margin-top: -10px;
+        }
+    }
+}

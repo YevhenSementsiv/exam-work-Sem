@@ -1,0 +1,190 @@
+.booking-top {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 100px 0;
+
+    @include respond-to('laptop m') {
+        padding: 90px 0;
+    }
+
+    @include respond-to('laptop') {
+        padding: 70px 0;
+    }
+
+    @include respond-to('tablet') {
+        padding: 60px 0;
+    }
+
+    @include respond-to('mobile') {
+        padding: 40px 0;
+    }
+
+    .container {
+        padding: 130px 30px 0;
+
+        @include respond-to('laptop m') {
+            padding: 100px 30px 0;
+        }
+    
+        @include respond-to('laptop') {
+            padding: 80px 30px 0;
+        }
+    
+        @include respond-to('tablet') {
+            padding: 60px 30px 0;
+        }
+    
+        @include respond-to('mobile') {
+            padding: 40px 30px 0;
+        }
+    }
+
+    &__holder {
+        max-width: 540px;
+        width: 100%;
+        padding: 50px 25px;
+        background-color: rgba(35, 35, 35, .8);
+
+        @include respond-to('laptop m') {
+            padding: 45px 25px;
+        }
+    
+        @include respond-to('laptop') {
+            padding: 40px 25px;
+        }
+    
+        @include respond-to('tablet') {
+            padding: 35px 20px;
+        }
+    
+        @include respond-to('mobile') {
+            padding: 30px 15px;
+        }
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+        margin-bottom: 30px;
+
+        @include respond-to('laptop') {
+            font-size: 18px;
+            letter-spacing: 1.4px;
+            margin-bottom: 25px;
+        }
+    
+        @include respond-to('tablet') {
+            font-size: 16px;
+            letter-spacing: 1.3px;
+            margin-bottom: 20px;
+        }
+    
+        @include respond-to('mobile') {
+            font-size: 16px;
+            letter-spacing: 1.2px;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__subtitle {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 30px;
+
+        @include respond-to('laptop') {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+    
+        @include respond-to('tablet') {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+    
+        @include respond-to('mobile') {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__text-holder {
+        font-size: 16px;
+        line-height: 160%;
+        margin-bottom: 30px;
+
+        @include respond-to('laptop') {
+            line-height: 150%;
+            margin-bottom: 25px;
+        }
+    
+        @include respond-to('tablet') {
+            font-size: 15px;
+            line-height: 140%;
+            margin-bottom: 20px;
+        }
+    
+        @include respond-to('mobile') {
+            font-size: 13px;
+            line-height: 130%;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__link-btn {
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        background: linear-gradient(45deg, $darkblue 40%, $blue 40%);
+        max-width: 225px;
+        width: 100%;
+        padding: 20px 15px;
+        font-family: $aleofont;
+        font-size: 16px;
+        color: $white;
+        letter-spacing: 1.2px;
+        line-height: 160%;
+
+        &:hover {
+            box-shadow: 0 2px 5px 2px rgb(255, 255, 255, .5);
+            transition: box-shadow linear .2s;
+        }
+
+        &:active {
+            transform: scale(0.9);
+            transition: transform linear .2s;
+        }
+
+        @include respond-to('laptop m') {
+            max-width: 200px;
+            padding: 18px 15px;
+            line-height: 150%;
+        }
+    
+        @include respond-to('laptop') {
+            max-width: 180px;
+            padding: 15px;
+            font-size: 15px;
+            line-height: 140%;
+        }
+    
+        @include respond-to('tablet') {
+            max-width: 160px;
+            padding: 15px;
+            font-size: 14px;
+            letter-spacing: 1.1px;
+            line-height: 130%;
+        }
+    
+        @include respond-to('mobile') {
+            max-width: 130px;
+            padding: 10px;
+            font-size: 12px;
+            letter-spacing: 1px;
+            line-height: 120%;
+        }
+    }
+} 

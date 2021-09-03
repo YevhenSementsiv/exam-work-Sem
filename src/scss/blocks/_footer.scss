@@ -1,0 +1,150 @@
+.footer {
+    background-color: $lightblack;
+    padding: 120px 0 50px;
+
+    @include respond-to('laptop m') {
+        padding: 110px 0 50px;
+    }
+
+    @include respond-to('laptop') {
+        padding: 90px 0 40px;
+    }
+
+    @include respond-to('tablet') {
+        padding: 70px 0 30px;
+    }
+
+    @include respond-to('mobile') {
+        padding: 50px 0 20px;
+    }
+
+    &__holder {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    &__logo-link {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 700;
+        color: $white;
+        letter-spacing: 3.36px;
+        margin-bottom: 15px;
+
+        @include respond-to('laptop m') {
+            font-size: 22px;
+            letter-spacing: 3.2px;
+        }
+    
+        @include respond-to('laptop') {
+            font-size: 20px;
+            letter-spacing: 2.8px;
+        }
+    
+        @include respond-to('tablet') {
+            font-size: 18px;
+            letter-spacing: 2.5px;
+            margin-bottom: 10px;
+        }
+    
+        @include respond-to('mobile') {
+            font-size: 16px;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 1.6px;
+        margin-bottom: 30px;
+
+        @include respond-to('laptop m') {
+            font-size: 15px;
+            letter-spacing: 1.5px;
+            margin-bottom: 25px;
+        }
+    
+        @include respond-to('laptop') {
+            font-size: 15px;
+            letter-spacing: 1.5px;
+            margin-bottom: 25px;
+        }
+    
+        @include respond-to('tablet') {
+            font-size: 14px;
+            letter-spacing: 1.4px;
+            margin-bottom: 20px;
+        }
+    
+        @include respond-to('mobile') {
+            font-size: 13px;
+            letter-spacing: 1.3px;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__social-list {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__list-item {
+        padding: 13px;
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+
+        @include respond-to('laptop m') {
+            padding: 13px;
+        }
+    
+        @include respond-to('laptop') {
+            padding: 13px;
+        }
+    
+        @include respond-to('tablet') {
+            padding: 13px;
+        }
+    
+        @include respond-to('mobile') {
+            padding: 13px;
+        }
+    }
+
+    &__social-link {
+        text-decoration: none;
+        font-size: 18px;
+        color: $white;
+
+        &:hover {
+            color: $blue;
+            transition: color linear .2s;
+        }
+
+        @include respond-to('laptop m') {
+            font-size: 17px;
+        }
+    
+        @include respond-to('laptop') {
+            font-size: 16px;
+        }
+    
+        @include respond-to('tablet') {
+            font-size: 15px;
+        }
+    
+        @include respond-to('mobile') {
+            font-size: 14px;
+        }
+    }
+}
